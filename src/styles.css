@@ -8,40 +8,18 @@ html, body {
 .text-2 {font-size: 1.5rem;}
 .text-active {color: orange;}
 
-@media only screen and (max-width: 600px) {
-  .text-1 {font-size: 1.6rem;}
-  .text-2 {font-size: 1.3rem;}
-}
-
-
 .container {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
 }
-/*.box {
-  background-color: #ededed;
-  padding: 20px;
-  border-radius: 10px;
-}*/
-/*
-.grid {
-  display: flex;
-}*/
-/*
-.col {
-  flex-grow: 1;
-  margin: 5px;
-}
-
-.col:first-child {
-  margin-left: 0;
-}
-
-.col:last-child {
-  margin-right: 0;
-}*/
 
 .title {
   font-size: 2rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .text-1 {font-size: 1.6rem;}
+  .text-2 {font-size: 1.3rem;}
+}
+
