@@ -6,61 +6,12 @@ import { CounterService } from './shared/utils/counter.service';
   template: `
     <div class="container">
       <fb-navbar></fb-navbar>
-
-      <fb-grid>
-        <fb-col>
-          <fb-box size="xl" [showLogo]="true"></fb-box>
-        </fb-col>
-      </fb-grid>
-
-      <fb-grid>
-        <fb-col>
-          <fb-box size="md" [showLogo]="true"></fb-box>
-        </fb-col>
-        <fb-col>
-          <fb-box size="md" [showLogo]="true"></fb-box>
-        </fb-col>
-      </fb-grid>
-
- 
-      <fb-grid>
-        <fb-col>
-          <fb-box size="md">1</fb-box>
-        </fb-col>
-        <fb-col>
-          <fb-box size="md">2</fb-box>
-        </fb-col>
-        <fb-col>
-          <fb-box size="md">3</fb-box>
-        </fb-col>
-        <fb-col>
-          <fb-box size="md">4</fb-box>
-        </fb-col>
-      </fb-grid>
-
-      <div style="width: 200px">
-        <fb-grid>
-          <fb-col>
-            <fb-box (click)="countService.dec()" bg="warning">dec</fb-box>
-          </fb-col>
-          <fb-col>
-            <fb-box>
-              <div class="text-2">{{countService.value}}</div>
-            </fb-box>
-          </fb-col>
-          <fb-col>
-            <fb-box (click)="countService.inc()" bg="warning">inc</fb-box>
-          </fb-col>
-        </fb-grid>
-      </div>
-
+      <router-outlet></router-outlet>
       Created by <span fbUrl="http://www.fabiobiondi.io">Fabio Biondi</span>
-    </div>
   `,
   styles: []
 })
 export class AppComponent {
 
-  constructor(public countService: CounterService) { }
 
 }

@@ -8,6 +8,9 @@ import { ColComponent } from './shared/uikit/components/col.component';
 import { GridComponent } from './shared/uikit/components/grid.component';
 import { NavbarComponent } from './core/components/navbar.component';
 import { UrlDirective } from './shared/uikit/directives/url.directive';
+import { HomeComponent } from './pages/home.component';
+import { ContactsComponent } from './pages/contacts.component';
+import { ProductsComponent } from './pages/catalog.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,11 @@ import { UrlDirective } from './shared/uikit/directives/url.directive';
     BoxComponent,
     ColComponent,
     GridComponent,
-    UrlDirective
+    UrlDirective,
+    // features
+    HomeComponent,
+    ContactsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
