@@ -1,4 +1,4 @@
-import { Component, HostBinding, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 enum Sizes {
   xs = 50,

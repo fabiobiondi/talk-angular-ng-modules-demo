@@ -13,11 +13,4 @@ import { Component, OnInit } from '@angular/core';
     .button {padding: 0.5rem;}
   `]
 })
-export class NavbarComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class NavbarComponent  { }

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CounterService } from './shared/utils/counter.service';
 
 @Component({
   selector: 'fb-root',
@@ -8,10 +7,8 @@ import { CounterService } from './shared/utils/counter.service';
       <fb-navbar></fb-navbar>
       <router-outlet></router-outlet>
       Created by <span fbUrl="http://www.fabiobiondi.io">Fabio Biondi</span>
+    </div>
   `,
   styles: []
 })
-export class AppComponent {
-
-
-}
+export class AppComponent {}
