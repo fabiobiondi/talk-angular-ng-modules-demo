@@ -1,8 +1,14 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Optional } from '@angular/core';
 
-@Injectable({ providedIn: 'root'})
+@Injectable()
 export class CounterService {
   value = 0;
+
+  constructor(@Optional() startValue?: number) {
+    if (startValue) {
+      this.value = startValue;
+    }
+  }
 
   inc(): void {
     this.value++;

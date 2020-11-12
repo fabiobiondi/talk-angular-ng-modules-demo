@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'fb-products',
   template: `
-
     <fb-grid>
       <fb-col>
         <fb-box [alignCenter]="false" size="sm" [showLogo]="true">PRODUCT 1</fb-box>
