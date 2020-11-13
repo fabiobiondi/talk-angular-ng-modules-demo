@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CounterService } from '../shared/utils/counter.service';
 
 @Component({
   selector: 'fb-home',
@@ -35,24 +34,8 @@ import { CounterService } from '../shared/utils/counter.service';
       </fb-col>
     </fb-grid>
 
-    <div style="width: 200px">
-      <fb-grid>
-        <fb-col>
-          <fb-box (click)="countService.dec()" bg="warning">dec</fb-box>
-        </fb-col>
-        <fb-col>
-          <fb-box>
-            <div class="text-2">{{countService.value}}</div>
-          </fb-box>
-        </fb-col>
-        <fb-col>
-          <fb-box (click)="countService.inc()" bg="warning">inc</fb-box>
-        </fb-col>
-      </fb-grid>
-    </div>
-
+    <fb-counter></fb-counter>
   `,
 })
 export class HomeComponent {
-  constructor(public countService: CounterService) { }
 }
