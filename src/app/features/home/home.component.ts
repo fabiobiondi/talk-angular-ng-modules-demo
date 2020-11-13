@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CounterService } from '../../shared/widgets/counter/counter.service';
 
 @Component({
   selector: 'fb-home',
