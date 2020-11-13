@@ -1,15 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeCarouselComponent } from './home-carousel.component';
-import { SharedModule } from '../../../shared/shared.module';
-
-
+import { UikitModule } from '../../../shared/uikit/uikit.module';
 
 @NgModule({
   declarations: [HomeCarouselComponent],
   imports: [
     CommonModule,
-    SharedModule
+    UikitModule
   ],
   exports: [HomeCarouselComponent]
 })

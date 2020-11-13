@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeNewsComponent } from './home-news.component';
-import { SharedModule } from '../../../shared/shared.module';
+import { UikitModule } from '../../../shared/uikit/uikit.module';
 
 
 
@@ -9,7 +9,7 @@ import { SharedModule } from '../../../shared/shared.module';
   declarations: [HomeNewsComponent],
   imports: [
     CommonModule,
-    SharedModule
+    UikitModule
   ],
   exports: [HomeNewsComponent]
 })

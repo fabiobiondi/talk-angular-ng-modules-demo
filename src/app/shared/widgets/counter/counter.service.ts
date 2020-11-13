@@ -4,7 +4,7 @@ import { Injectable, Optional } from '@angular/core';
 export class CounterService {
   value = 0;
 
-  constructor(@Optional() startValue?: number) {
+  constructor(@Optional() private startValue?: number) {
     if (startValue) {
       this.value = startValue;
     }

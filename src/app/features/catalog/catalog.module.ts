@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CatalogRoutingModule } from './catalog-routing.module';
 import { CatalogComponent } from './catalog.component';
-import { SharedModule } from '../../shared/shared.module';
+import { UikitModule } from '../../shared/uikit/uikit.module';
 
 
 @NgModule({
@@ -11,7 +11,7 @@ import { SharedModule } from '../../shared/shared.module';
   imports: [
     CommonModule,
     CatalogRoutingModule,
-    SharedModule
+    UikitModule
   ]
 })
 export class CatalogModule { }

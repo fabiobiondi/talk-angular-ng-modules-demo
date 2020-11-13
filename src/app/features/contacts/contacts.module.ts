@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { ContactsRoutingModule } from './contacts-routing.module';
 import { ContactsComponent } from './contacts.component';
-import { SharedModule } from '../../shared/shared.module';
+import { CounterModule } from '../../shared/widgets/counter/counter.module';
+import { UikitModule } from '../../shared/uikit/uikit.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { SharedModule } from '../../shared/shared.module';
   imports: [
     CommonModule,
     ContactsRoutingModule,
-    SharedModule
+    UikitModule,
+    CounterModule
   ]
 })
 export class ContactsModule { }
