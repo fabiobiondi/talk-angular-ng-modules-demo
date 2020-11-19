@@ -19,7 +19,6 @@ enum TextColors {
   warning = 'white',
 }
 
-type Color = typeof Backgrounds;
 
 @Component({
   selector: 'fb-box',
