@@ -7,8 +7,8 @@ import { Component, HostBinding, OnInit, ViewEncapsulation } from '@angular/core
   `,
   styles: [`
     :host.col { flex-grow: 1; margin: 5px }
-    :host..col:first-child { margin-left: 0 }
-    :host..col:last-child { margin-right: 0 }
+    :host.col:first-child { margin-left: 0 }
+    :host.col:last-child { margin-right: 0 }
   `]
 })
 export class ColComponent {
